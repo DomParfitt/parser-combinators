@@ -1,0 +1,46 @@
+{
+  "name": "parser-combinators",
+  "version": "0.1.0",
+  "description": "Playing with Parsers",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "clean": "rm -rf build",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "lint": "eslint . --ext .ts --max-warnings=0",
+    "prepublishOnly": "npm run build",
+    "start": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "author": {
+    "name": "Dom Parfitt",
+    "email": "mail@domparfitt.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DomParfitt/parser-combinators.git"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-typescript": "^14.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-only-warn": "^1.0.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.1.0",
+    "jest-junit": "^12.2.0",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}
